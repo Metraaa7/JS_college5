@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects 6</title>
+    <script type="text/javascript">
+        let human = {
+            fName: "Alex",
+            lName: "Jazun",
+            age: 27,
+            occupation: "Web Developer",
+            show: function() {
+                document.write("<p>First Name: " + human.fName);
+                document.write("<p>Second Name: " + human.lName);
+                document.write("<p>Age: " + human.age);
+                document.write("<p>Occupation: " + this.occupation + "<hr/>");
+               
+            },
+            changeWork: function(occupation) {
+                this.occupation = occupation;
+            }
+        }
+        human.show();
+        human.changeWork("Manager");
+        human.show();
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

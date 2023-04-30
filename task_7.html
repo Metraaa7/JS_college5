@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects 7</title>
+    <script type="text/javascript">
+        let builder = new Object();
+
+        builder.roof = function() {
+            document.write("<p>_____");
+        }
+        builder.sFloor = function() {
+            document.write("<p> |____|");
+        }
+        builder.fFloor = function() {
+            document.write("<p> |____|");
+        }
+        builder.basement = function() {
+            document.write("<p> |___/");
+        }
+       builder.roof();
+       builder.sFloor();
+       builder.fFloor();
+       builder.basement();
+       document.write("<hr/>");
+       builder.sFloor();
+       builder.fFloor();
+        
+    </script>
+    <style>
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
